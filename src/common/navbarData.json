@@ -1,0 +1,228 @@
+{
+    "L1": {
+        "C42": {
+            "Activity 1a": {
+                "link": "/L1/C42/Activity-1a",
+                "name": "Screen Time Detective"
+            },
+            "Activity 1b": {
+                "link": "/L1/C42/Activity-1b",
+                "name": "Daily Time Pie"
+            },
+            "Activity 3a": {
+                "link": "/L1/C42/Activity-3a",
+                "name": "What's the rating"
+            },
+            "Activity 3b": {
+                "link": "/L1/C42/Activity-3b",
+                "name": "For Me OR Not For Me"
+            },
+            "Activity 4": {
+                "link": "/L1/C42/Activity-4",
+                "name": "Profile Detective"
+            },
+            "Additional Activity": {
+                "link": "/L1/C42/AA",
+                "name": "Too Much Screen Trouble"
+            },
+            "Post Class Activity": {
+                "link": "/L1/C42/PCA",
+                "name": "Screen Time Tracker"
+            }
+        },
+        "C43":{
+            "Warm up activity": {
+                "link": "/L1/C43/Warm-up-activity",
+                "name": "Fruit & Veggie Frenzy Sort!"
+            },
+            "Activity 1a": {
+                "link": "/L1/C43/Activity-1a",
+                "name": "Classroom Sort-It Challenge!"
+            },
+            "Activity 2": {
+                "link": "/L1/C43/Activity-2",
+                "name": "The Great School Lunch Mystery!"
+            },
+            "Activity 3": {
+                "link": "/L1/C43/Activity-3",
+                "name": "Toy Sales Tracker"
+            }
+        },
+        "C47":{
+            "Warm up activity": {
+                "link": "/L1/C47/Warm-up-activity",
+                "name": "Real or Virtual?"
+            },
+            "Activity 1a": {
+                "link": "/L1/C47/Activity-1a",
+                "name": "Meet the Metaverse!"
+            },
+            "Activity 2a": {
+                "link": "/L1/C47/Activity-2a",
+                "name": "Metaverse Safety"
+            },
+            "Post Class Activity": {
+                "link": "/L1/C47/PCA",
+                "name": "Safe Space Rules"
+            }
+        },
+        "C48": {
+            "Activity 3a": {
+                "link": "/L1/C48/Activity-3a",
+                "name": "Submarine Details"
+            }
+        }
+    },
+    "L2": {
+        "C42": {
+            "Activity 1": {
+                "link": "/L2/C42/Activity-1",
+                "name": "Search Master Showdown"
+            },
+            "Activity 2": {
+                "link": "/L2/C42/Activity-2",
+                "name": "Who Said That?"
+            },
+            "Activity 3": {
+                "link": "/L2/C42/Activity-3",
+                "name": "AI Buddy or AI Boss?"
+            },
+            "Activity 4a": {
+                "link": "/L2/C42/Activity-4a",
+                "name": "What's the rating"
+            },
+            "Activity 4b": {
+                "link": "/L2/C42/Activity-4b",
+                "name": "Better For Whom"
+            },
+            "Post Class Activity": {
+                "link": "/L2/C42/PCA",
+                "name": "Screen Time Tracker"
+            }
+        },
+        "C43":{
+            "Warm up activity": {
+                "link": "/L2/C43/Warm-up-activity",
+                "name": "Snack Stack Sorter"
+            },
+            "Activity 1a": {
+                "link": "/L2/C43/Activity-1a",
+                "name": "Garage Sale Data Detective!"
+            },
+            "Activity 2": {
+                "link": "/L2/C43/Activity-2",
+                "name": "Filter Wizards"
+            },
+            "Activity 3": {
+                "link": "/L2/C43/Activity-3",
+                "name": "Math Lab Mystery"
+            },
+            "Activity 4": {
+                "link": "/L2/C43/Activity-4",
+                "name": "Chart Champions"
+            },
+            "Additional Activity": {
+                "link": "/L2/C43/Additional-Activity",
+                "name": "Flavor Showdown!"
+            }
+        },
+        "C47":{
+            "Warm up activity": {
+                "link": "/L2/C47/Warm-up-activity",
+                "name": "Real or Virtual?"
+            },
+            "Activity 1a": {
+                "link": "/L2/C47/Activity-1a",
+                "name": "Meet the Metaverse!"
+            },
+            "Post Class Activity": {
+                "link": "/L2/C47/PCA",
+                "name": "Case Study"
+            }
+        },
+        "C48": {
+            "Activity 1a": {
+                "link": "/L2/C48/Activity-1a",
+                "name": "GSLV MkIII launcher Details"
+            },
+            "Activity 2a": {
+                "link": "/L2/C48/Activity-2a",
+                "name": "RoboPick’s Learning Mission!"
+            }
+        }
+    },
+    "L3": {
+        "C42": {
+            "Warm up activity": {
+                "link": "/L3/C42/Warm-up-activity",
+                "name": "Real vs. Tricky Signs"
+            },
+            "Activity 1": {
+                "link": "/L3/C42/Activity-1",
+                "name": "Domain Detective"
+            },
+            "Activity 2": {
+                "link": "/L3/C42/Activity-2",
+                "name": "Search Master Showdown"
+            },
+            "Activity 3": {
+                "link": "/L3/C42/Activity-3",
+                "name": "Copy or Credit?"
+            },
+            "Activity 4": {
+                "link": "/L3/C42/Activity-4",
+                "name": "AI Buddy or AI Boss?"
+            },
+            "Additional Activity": {
+                "link": "/L3/C42/AA",
+                "name": "Digital Detective"
+            },
+            "Post Class Activity": {
+                "link": "/L3/C42/PCA",
+                "name": "Screen Time Tracker"
+            }
+        },
+        "C43":{
+            "Activity 1": {
+                "link": "/L3/C43/Activity-1",
+                "name": "Maya's Ice Cream Parlour"
+            },
+            "Activity 2": {
+                "link": "/L3/C43/Activity-2",
+                "name": "Pizza Day Challenge"
+            },
+            "Activity 3": {
+                "link": "/L3/C43/Activity-3",
+                "name": "Graph Challenge"
+            },
+            "Activity 4": {
+                "link": "/L3/C43/Activity-4",
+                "name": "The Smart Stock-Up Mission"
+            },
+            "Additional-Activity": {
+                "link": "/L3/C43/Additional-Activity",
+                "name": "Product Spotlight"
+            }
+        },
+        "C47":{
+            "Activity 1a": {
+                "link": "/L3/C47/Activity-1a",
+                "name": "Meet the Metaverse!"
+            },
+            "Activity 4c": {
+                "link": "/L3/C47/Activity-4c",
+                "name": "What is Cryptocurrencies"
+            },
+            "Post Class Activity": {
+                "link": "/L3/C47/PCA",
+                "name": "Case Study"
+            }
+        },
+        "C48": {
+            "Activity 1": {
+                "link": "/L3/C48/Activity-1",
+                "name": "Cyra & TaskBot’s Learning Adventure!"
+            }
+        }
+    }
+}

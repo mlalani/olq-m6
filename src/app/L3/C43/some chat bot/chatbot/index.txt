@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f7fc;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 32px;
+      text-align: left;
+      margin-bottom: 20px;
+      color: #2a4365;
+    }
+
+    .intro {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      flex-wrap: wrap;
+    }
+
+    .intro img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid #2a4365;
+      flex-shrink: 0;
+    }
+
+    .intro-text {
+      flex: 1;
+      min-width: 200px;
+      font-size: 19px;
+      line-height: 1.6;
+    }
+
+    .intro-text p {
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .intro {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .intro img {
+        width: 140px;
+        height: 140px;
+      }
+
+      .intro-text {
+        font-size: 16px;
+      }
+
+      .intro img {
+        margin-bottom: 15px;
+      }
+
+      .intro-text {
+        text-align: center;
+      }
+    }
+
+    df-messenger {
+      --df-messenger-bot-message: #e3f2fd;
+      --df-messenger-button-titlebar-color: #2a4365;
+      --df-messenger-button-titlebar-font-color: white;
+      --df-messenger-chat-background-color: #ffffff;
+      --df-messenger-font-color: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+  <script>
+    // Edit1
+    const name = "NAME";
+    const content = "CONTENT..."
+  </script>
+
+
+  <h1 id="name"></h1>
+
+  <div class="intro">
+    <img id="studentImage" src="" alt="Student Image" />
+    <div class="intro-text">
+      <p id="content"></p>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+  <!-- EDIT2 -->
+  <df-messenger intent="WELCOME" chat-title="Zoya's Chatbot" agent-id="YOUR_AGENT_ID" language-code="en"></df-messenger>
+
+  <script>
+    const image = "./myPhoto.png"
+    document.addEventListener('DOMContentLoaded', function () {
+      handleUpdateContent()
+    });
+
+    const handleUpdateContent = () => {
+      const heading = document.getElementById('name');
+      heading.textContent = name + "'s Chatbot";
+
+      const content_ = document.getElementById('content');
+      content_.textContent = content;
+
+      const studentImage = document.getElementById('studentImage');
+      studentImage.src = image;
+    }
+
+
+    const dfMessenger = document.querySelector('df-messenger');
+    const mediaQuery = window.matchMedia('(min-width: 601px)');
+
+    const updateChatbox = (e) => e.matches
+      ? dfMessenger.setAttribute('expand', 'true')
+      : dfMessenger.removeAttribute('expand');
+
+    mediaQuery.addEventListener('change', updateChatbox);
+    updateChatbox(mediaQuery);
+  </script>
+
+</body>
+
+</html>
