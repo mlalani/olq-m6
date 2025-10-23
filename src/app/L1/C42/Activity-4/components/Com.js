@@ -1,61 +1,138 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
+import S1 from "../assets/S1.png";
+import S2 from "../assets/S2.png";
+import S3 from "../assets/S3.png";
+import S4 from "../assets/S4.png";
+import S5 from "../assets/S5.png";
+import S6 from "../assets/S6.png";
+import S7 from "../assets/S7.png";
+import S8 from "../assets/S8.png";
+import S9 from "../assets/S9.png";
+
+const imageScreens = [
+  { id: 1, image: S1, type: 'single' },
+  { id: 2, image: S2, type: 'single' },
+  { id: 3, image: S3, type: 'single' },
+  { id: 4, image: S4, type: 'single' },
+  { id: 5, image: S5, type: 'single' },
+  { id: 6, image: S6, type: 'double', secondImage: S7 },
+  { id: 7, image: S8, type: 'double', secondImage: S9 },
+];
 
 const contentBlocks = [
   {
-    title: 'Safety First!',
+    title: 'Safety First',
     description:
-      "This is the most important reason! When you have your own 'Kids' profile, the platform knows exactly how old you are. It will only show you shows and movies perfect for you so you never accidentally see something that's too scary or confusing for you.",
+      "A kids profile protects you from seeing content that may be scary, harmful, or not meant for your age. It keeps your online watching experience safe and child-friendly.",
   },
   {
-    title: 'Only Fun Stuff for You!',
+    title: 'Better Recommendations',
     description:
-      "When you use your own profile, the platform learns what you like. So, if you love animal videos and cartoons, it will show you more animal videos and cartoons! You won't get recommendations for boring news or finance videos that your parents watch.",
+      "When you use your own profile, the platform understands what you enjoy watching like cartoons, science videos, or space adventures and shows more of what you like.",
   },
   {
-    title: 'Everyone Gets Their Own Space!',
+    title: 'Your Own Space',
     description:
-      "Your parents can have their profile with their shows, and you can have your profile with your shows. Everyone's watch history stays separate, neat, and tidy!",
+      "Everyone in the family can have their own profile. That means your watch history stays clean and separate, and your screen won’t be filled with shows meant for adults.",
   },
 ];
 
 export default function Com() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const current = contentBlocks[currentIndex];
-  const isLast = currentIndex === contentBlocks.length - 1;
+  const [showContentBlocks, setShowContentBlocks] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentContentIndex, setCurrentContentIndex] = useState(0);
+
+  const currentImage = imageScreens[currentImageIndex];
+  const currentContent = contentBlocks[currentContentIndex];
+  const isLastImage = currentImageIndex === imageScreens.length - 1;
+  const isLastContent = currentContentIndex === contentBlocks.length - 1;
 
   const handleNext = () => {
-    if (!isLast) setCurrentIndex((prev) => prev + 1);
+    if (!showContentBlocks) {
+      // Still showing image screens
+      if (!isLastImage) {
+        setCurrentImageIndex((prev) => prev + 1);
+      } else {
+        // Move to content blocks
+        setShowContentBlocks(true);
+      }
+    } else {
+      // Showing content blocks
+      if (!isLastContent) {
+        setCurrentContentIndex((prev) => prev + 1);
+      }
+    }
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-rose-100 flex flex-col items-center justify-start px-6 py-10">
-      {/* Heading */}
-      <h1 className="text-3xl font-bold text-purple-800 mb-10 text-center">
-        Purpose and Usefulness Of Personal Profile
-      </h1>
+      {!showContentBlocks ? (
+        // Image Screens
+        <div className="flex flex-col items-center space-y-8">
 
-      {/* Card */}
-      <div className="bg-white shadow-xl rounded-3xl p-10 max-w-3xl w-full text-center space-y-8">
-        <h2 className="text-3xl font-bold text-indigo-700">{current.title}</h2>
-        <p className="text-gray-700 text-lg leading-relaxed">{current.description}</p>
+          <div className="bg-white shadow-xl rounded-3xl p-8 max-w-8xl w-full">
+            {currentImage.type === 'single' ? (
+              <div className="flex justify-center">
+                <Image
+                  src={currentImage.image}
+                  alt={`Screen ${currentImage.id}`}
+                  className="w-full max-w-4xl h-auto rounded-lg"
+                />
+              </div>
+            ) : (
+              <div className="flex justify-center gap-6">
+                <Image
+                  src={currentImage.image}
+                  alt={`Screen ${currentImage.id}`}
+                  className="w-full max-w-2xl h-auto rounded-lg"
+                />
+                <Image
+                  src={currentImage.secondImage}
+                  alt={`Screen ${currentImage.id + 1}`}
+                  className="w-full max-w-2xl h-auto rounded-lg"
+                />
+              </div>
+            )}
+          </div>
 
-        {!isLast && (
           <button
             onClick={handleNext}
             className="mt-6 bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-full shadow-lg transition"
           >
             Next
           </button>
-        )}
+        </div>
+      ) : (
+        // Content Blocks
+        <div className="flex flex-col items-center space-y-8">
+          <h1 className="text-3xl font-bold text-purple-800 mb-10 text-center">
+            Benefits
+          </h1>
 
-        {isLast && (
-          <p className="text-green-600 text-xl font-semibold mt-6">
-            {/* 🎉 That’s why your own profile matters! */}
-          </p>
-        )}
-      </div>
+          <div className="bg-white shadow-xl rounded-3xl p-10 max-w-3xl w-full text-center space-y-8">
+            <h2 className="text-3xl font-bold text-indigo-700">{currentContent.title}</h2>
+            <p className="text-gray-700 text-lg leading-relaxed">{currentContent.description}</p>
+
+            {!isLastContent && (
+              <button
+                onClick={handleNext}
+                className="mt-6 bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-full shadow-lg transition"
+              >
+                Next
+              </button>
+            )}
+
+            {isLastContent && (
+              <p className="text-green-600 text-xl font-semibold mt-6">
+                🎉 That's why your own profile matters!
+              </p>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

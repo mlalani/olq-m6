@@ -13,14 +13,14 @@ const Com = () => {
   const [currentScreen, setCurrentScreen] = useState(1);
   
   const images = [
-    { id: 1, src: S1, text: "A football player in a FIFA video game" },
-    { id: 2, src: S2, text: "Toothbrush" },
-    { id: 3, src: S3, text: "Teddy Bear" },
-    { id: 4, src: S4, text: "Dragon Pet in game" },
-    { id: 5, src: S5, text: "Crayon" },
-    { id: 6, src: S6, text: "Birthday Cake" },
-    { id: 7, src: S7, text: "Roblox character in Roblox game" },
-    { id: 8, src: S8, text: "Ice Castle in mobile game" },
+    { id: 1, src: S1, text: "" },
+    { id: 2, src: S2, text: "" },
+    { id: 3, src: S3, text: "" },
+    { id: 4, src: S4, text: "" },
+    { id: 5, src: S5, text: "" },
+    { id: 6, src: S6, text: "" },
+    { id: 7, src: S7, text: "" },
+    { id: 8, src: S8, text: "" },
   ];
 
   const handleNext = () => {

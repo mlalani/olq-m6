@@ -13,7 +13,7 @@ const Com = () => {
   const screens = [
     {
       id: 1,
-      text: "Lila is sitting in her room and there is a glass type device near her.",
+      text: "Lila is sitting in her room next to a device made of glass.",
       image: S1,
       buttonText: "Show Device",
       isDeviceButton: true
@@ -34,14 +34,14 @@ const Com = () => {
     },
     {
       id: 4,
-      text: "In the metaverse, Lila can meet her friends and together they explore the castles",
+      text: "In the metaverse, Lila can meet her friends to explore castles together.",
       image: S4,
       buttonText: "Next",
       isDeviceButton: false
     },
     {
       id: 5,
-      text: "Lila's mother calls her mom for dinner, and she takes off her VR headset and goes for dinner.",
+      text: "Lila's mother calls for dinner, so she takes off her VR headset and goes to eat.",
       image: S5,
       buttonText: "Next",
       isDeviceButton: false

@@ -12,25 +12,32 @@ const Com = () => {
       id: 1,
       question: "Do you know what Cryptocurrency is?",
       image: S1,
-      answer: "Cryptocurrency is a type of digital money that is stored and used online. You can't hold it like coins or bills, but you can use it to buy things, trade, or save it, just like real money. The cool thing is: it's not made by banks or governments, it's created using computers and code!",
-      nextQuestion: "Can you guess how cryptocurrency is created?"
+      answer: "Cryptocurrency is a virtual money that you can use online in certain shops, games, or websites.",
+      nextQuestion: "How is it different from real currency?"
     },
     {
       id: 2,
-      question: "Can you guess how cryptocurrency is created?",
+      question: "How is it different from real currency?",
+      image: S1,
+      answer: "You can’t hold it in your hand or use it to buy everyday items in any store or shop. It is not saved in your wallet, bank or safe. Instead, it's stored safely using computers. You can use it to pay or trade, or even save it like real money! it’s not made by banks or governments; it's created using computers and code!",
+      nextQuestion: "How is cryptocurrency created?"
+    },
+    {
+      id: 3,
+      question: "How is cryptocurrency created?",
       answer: "Cryptocurrency is created through a process called mining, but not with shovels or digging! Instead, computers work like giant calculators solving very tricky puzzles. These puzzles help check and confirm digital money transactions made by people around the world.",
       nextQuestion: "Can anyone create a cryptocurrency?"
     },
     {
-      id: 3,
+      id: 4,
       question: "Can anyone create a cryptocurrency?",
-      answer: "Yes, if someone understands coding and blockchain technology, they can create their own. But just like building a new app or website, it takes a lot of skill.",
-      nextQuestion: "What do you think about where people keep cryptocurrency?"
+      answer: "Yes, if they know coding and blockchain technology, they can create their own. But just like building a new app or website, it requires lots of skills..",
+      nextQuestion: "How is cryptocurrency different from digital wallet like apple pay, gpay?"
     },
     {
-      id: 4,
-      question: "What do you think about where people keep cryptocurrency?",
-      answer: "People keep their cryptocurrency in something called a digital wallet. It's like a special app or website where all your digital money is stored safely. Here are some real apps and websites people use to store their crypto: Coinbase, MetaMask, Binance",
+      id: 5,
+      question: "How is cryptocurrency different from digital wallet like apple pay, gpay?",
+      answer: "Digital wallet holds your money safely and lets you send or receive it.  Just as you would open your wallet and remove cash, you access a digital wallet to make payments. Cryptocurrency uses advanced encryption techniques to verify and secure transactions. When you own cryptocurrency, you don't own a tangible coin or cash. Instead, you own a cryptographic key that gives you the ability to transfer a record of that currency from one person to another. Here are some real apps and websites people use to store their crypto: Coinbase, MetaMask, Binance",
       nextQuestion: null
     }
   ];

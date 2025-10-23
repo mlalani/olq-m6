@@ -11,15 +11,15 @@ export default function Com() {
 
   const scenarioData = {
     1: {
-      heading: 'Scenario 1: “Design a Zoo Animal”',
+      heading: 'Scenario 1: "Design a Creature"',
       description:
-        'Arya’s first challenge is: she needs to create a brand new animal, give it a name, some fun facts. Arya is confused which way to go:',
+      "Arya has to create a brand new creature, give it a name with some fun facts.",
       options: [
-        'Option A: "I’ll think of an animal that eats pizza and climbs walls. Then I’ll ask AI-X to give me name ideas for my animal!"',
-        'Option B: "I’ll just type: ‘Create a new zoo animal with name, facts, drawing, and story’ into AI-X and copy-paste everything it writes straight into my project."',
+        'Option A: I’ll think of a creature that eats pizza and climbs over anything. Then I’ll ask AI-X to give me name ideas based on qualities I thought about for my creature!',
+        'Option B: I’ll just type: ‘Create a new creature with name, facts, drawing, and story’ into AI-X and copy-paste everything it writes straight into my project.',
       ],
       questions: [
-        'Which one lets Arya be creative and use her own brain?',
+        'Which option lets Arya be creative and use her own brain?',
         'What do you think could go wrong with Option B?',
         'Which option should she pick?',
       ],
@@ -32,14 +32,14 @@ export default function Com() {
     2: {
       heading: 'Scenario 2: “The Dino Disaster!”',
       description:
-        'Arya has a new project to create a mini-poster about extinct animals. She needs to gather some facts. Arya is confused which way to go:',
+        'Arya has to create a mini-poster about extinct creatures. She needs to gather some facts. Arya is confused about which way to go: ',
       options: [
-        'Option A: "I’ll look up a few extinct animals then ask AI-X to help organize the facts into neat bullet points or a short summary."',
-        'Option B: "I’ll just ask AI-X to tell me everything about dinosaurs and copy it directly onto my poster."'
+        'Option A: I’ll research a few extinct creatures and create my notes with names, pictures and location. Then, I will ask AI-X to help organize these points into a poster.',
+        'Option B: I’ll just ask AI-X to tell me everything about dinosaurs and copy it directly onto my poster.'
       ],
       questions: [
-        'What could go wrong with Option B?',
-        'Which one should Arya choose this time?'
+        'What might go wrong with Option B?',
+        'Which option should Arya choose this time?',
       ],
       result:
         'Arya thinks Option B is still the fastest way, so she copies what AI-X wrote for her poster. She proudly presents her poster in class. But guess what? It says: "Dinosaurs like the stegosaurus lived 2,000 years ago and hunted penguins."',
@@ -56,9 +56,7 @@ export default function Com() {
       {step === 'intro' && (
         <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur p-6 rounded-2xl shadow-xl text-center space-y-4">
           <p className="text-xl">
-            Meet Arya, a bright and curious 9-year-old. She just discovered a magical talking AI robot friend called
-            <strong> AI-X</strong>. AI-X can help with almost everything — but Arya has to learn when to use it as a buddy,
-            and when she's letting it be the boss!
+          Arya is a bright and curious nine year old girl. She just discovered a talking AI robot friend called <strong>AI-X</strong>. AI-X can help with almost everything but Arya has to learn when to use it as a buddy, and when she's letting it be the boss!
           </p>
           <Image
             src={C1}

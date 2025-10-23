@@ -12,7 +12,7 @@ function Com() {
     '',
   ];
 
-  const contentPara = "Welcome to Maple Tree Elementary, where every Friday is Fun Lunch Day! Chef Charlie usually makes five delicious lunch options, but last week, he made seven: pizza, pasta, pancakes, sandwiches, fried rice, tacos, and soup! <br /> He wanted to know which of these was most liked by the students. The students voted, but just as the lunchroom computer was about to count the votes, it crashed! Luckily, someone printed the data table of the votes just in time. Now Chef Charlie needs a clever Data Detective to help him. Can you solve the mystery?"
+  const contentPara = " Welcome to Maple Tree Elementary, where every Friday is Fun Lunch Day! Chef Charlie usually makes five lunches. But last week, he made seven: pizza, pasta, pancakes, sandwiches, fried rice, tacos, and soup! He wants to know which of these options had the highest ratings. The students voted, but just as the lunchroom computer was about to count, it crashed! Luckily, someone printed the data table of the votes just in time. Now Chef Charlie needs a clever Data Detective to help him. Can you solve the mystery?"
 
   const handleButtonClick = () => {
     if (step < contents.length) {

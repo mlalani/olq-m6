@@ -5,11 +5,11 @@ import S1 from '../assets/s1.png';
 
 const Com = () => {
   const [currentScreen, setCurrentScreen] = useState(1);
-  
+
   const screens = [
     {
       id: 1,
-      text: "In the Brightwood Academy Math Lab, a student Sam is working on tracking school supplies, but his calculator stopped working!",
+      text: "In Brightwood Academy Math Lab, Sam is tracking school supplies. But his calculator no longer works!",
       image: S1,
       buttonText: "Next"
     }
@@ -52,7 +52,7 @@ const Com = () => {
             He needs your help using Google Sheets formulas to solve some important puzzles. Luckily, Google Sheets is like a magic calculator.
           </p>
           <p className="text-xl text-gray-600 leading-relaxed font-medium mb-6">
-            With just a few clicks, you can find totals, see what's missing, and spot the biggest or smallest numbers. Let's solve the mystery!
+            Using Google Sheets, you can find totals, see what’s missing, and spot the largest or the smallest numbers. Let’s solve the mystery!
           </p>
         </div>
 

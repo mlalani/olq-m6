@@ -51,7 +51,7 @@
         "C47":{
             "Warm up activity": {
                 "link": "/L1/C47/Warm-up-activity",
-                "name": "Real or Virtual?"
+                "name": "Real or Created by AI!"
             },
             "Activity 1a": {
                 "link": "/L1/C47/Activity-1a",
@@ -124,6 +124,10 @@
             "Additional Activity": {
                 "link": "/L2/C43/Additional-Activity",
                 "name": "Flavor Showdown!"
+            },
+            "Post Class Activity": {
+                "link": "/L2/C43/PCA",
+                "name": "Data Detective Challenge"
             }
         },
         "C47":{
@@ -219,6 +223,10 @@
             }
         },
         "C48": {
+            "Warm up activity": {
+                "link": "/L3/C48/Warm-up-activity",
+                "name": "Who am I?"
+            },
             "Activity 1": {
                 "link": "/L3/C48/Activity-1",
                 "name": "Cyra & TaskBot’s Learning Adventure!"

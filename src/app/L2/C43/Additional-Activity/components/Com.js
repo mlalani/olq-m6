@@ -10,19 +10,19 @@ const Com = () => {
   const screens = [
     {
       id: 1,
-      text: "Maya from The Frosty Spot has a few more queries. Maya wants to know which ice cream flavors are most loved so she can order more of them.",
+      text: "Maya from The Frosty Spot has a few more queries. Maya wants to know which ice-cream flavors are best loved so she can order more of the same.",
       image: S1,
       buttonText: "Next"
     },
     {
       id: 2,
-      text: "To do this, we'll use a special kind of chart called a \"pie chart.\"",
+      text: "To do this, we will use Pie Chart. ",
       image: S2,
       buttonText: "Next"
     },
     {
       id: 3,
-      text: "A pie chart shows how a whole is divided into parts, like how many cones of each flavor were sold out of the total. Each slice shows a flavor's share in the big circle! Let's help Maya figure it out!",
+      text: "A pie chart shows how a whole is categorised into parts, like in Maya’s example, we can see how many cones of each flavor were sold out of the total. Each slice shows a flavor’s share in the big circle! ",
       image: S2,
       buttonText: "Next"
     }

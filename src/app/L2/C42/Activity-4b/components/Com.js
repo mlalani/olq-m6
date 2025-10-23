@@ -7,6 +7,15 @@ import S1 from '../assets/s1.png';
 import S2 from '../assets/s2.png';
 import S3 from '../assets/s3.png';
 import S4 from '../assets/s4.png';
+import S5 from '../assets/s5.png';
+import S6 from '../assets/s6.png';
+import S7 from '../assets/s7.png';
+import S8 from '../assets/s8.png';
+import S9 from '../assets/s9.png';
+import S10 from '../assets/s10.png';
+import S11 from '../assets/s11.png';
+import S12 from '../assets/s12.png';
+
 
 const questions = [
   {
@@ -35,6 +44,72 @@ const questions = [
     title: 'Gladiator II',
     image: S4,
     correctAnswer: ['It’s better for my parents and older people.'],
+  },
+  {
+    title: 'Jurassic World',
+    image: S5,
+    correctAnswer: ['It’s better for my parents and older people.'],
+  },
+  {
+    title: 'Home Alone',
+    image: S6,
+    correctAnswer: [
+      'It’s better for me',
+      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s better for my parents and older people.',
+    ],
+  },
+  {
+    title: 'Avengers',
+    image: S7,
+    correctAnswer: [
+      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s better for my parents and older people.',
+    ],
+  },
+  {
+    title: 'Baby’s day out',
+    image: S8,
+    correctAnswer: [
+      'It’s better for me',
+      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s better for my parents and older people.',
+    ],
+  },
+  {
+    title: 'Superman',
+    image: S9,
+    correctAnswer: [
+      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s better for my parents and older people.',
+    ],
+  },
+  {
+    title: 'Toy Story',
+    image: S10,
+    correctAnswer: [
+      'It’s better for me',
+      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s better for my parents and older people.',
+    ],
+  },
+  {
+    title: 'Karate Kid',
+    image: S11,
+    correctAnswer: [
+      'It’s better for me',
+      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s better for my parents and older people.',
+    ],
+  },
+  {
+    title: 'Smurfs',
+    image: S12,
+    correctAnswer: [
+      'It’s better for me',
+      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s better for my parents and older people.',
+    ],
   },
 ];
 

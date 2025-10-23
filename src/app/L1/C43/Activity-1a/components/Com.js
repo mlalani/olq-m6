@@ -8,11 +8,11 @@ function Com() {
   const [step, setStep] = useState(0);
 
   const contents = [
-    'Sort student names alphabetically: To easily take attendance, find names quickly, in A–Z order.',
-    'Sort students by height: To plan seating taller students can sit at the back.',
+    'Sort student names alphabetically: To take attendance easily, find names quickly, in A–Z order.', 
+    'Sort students by height: To organize the seating arrangement based on the height of each student.'
   ];
 
-  const contentPara = "Welcome to the Classroom Sort-It Challenge, led by a super organized student named Zoya! Zoya and her friend Ayaan, the class monitor, were in charge of organizing important class information like which students belong to which house, who needs the tallest chair, and when everyone joined the class. <br /> But with so many details on sticky notes and whiteboards, it was hard to keep everything straight! One day, Zoya’s friend showed her something amazing called Google Sheets."
+  const contentPara = "Zoya and her friend Ayaan are in charge of organizing important class information. They have to check which student belongs to which house, who needs the tallest furniture, and when everyone joined the class.  But with so many details on sticky notes and whiteboards, it’s hard to keep everything straight! "
 
   const handleButtonClick = () => {
     if (step < contents.length) {
@@ -21,7 +21,8 @@ function Com() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+      <h1 className="text-4xl font-bold text-blue-800 mb-8">Classroom Sort-It Challenge</h1>
       <div className="max-w-6xl w-full bg-white rounded-xl shadow-2xl p-6 flex flex-row gap-10 items-center">
         {/* Left Side: Image */}
         <div className="w-1/2 flex justify-center">

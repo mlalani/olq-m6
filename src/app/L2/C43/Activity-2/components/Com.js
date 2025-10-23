@@ -5,11 +5,11 @@ import S1 from '../assets/s1.png';
 
 const Com = () => {
   const [currentScreen, setCurrentScreen] = useState(1);
-  
+
   const screens = [
     {
       id: 1,
-      text: "Brightwood is a school where every student belongs to a special House, just like in some famous wizarding schools: Red House, Blue House, or Green House.",
+      text: "Brightwood is a school where every student belongs to a special house, just like in wizardry schools: Red House, Blue House, or Green House.",
       image: S1,
       buttonText: "Next"
     }
@@ -38,26 +38,28 @@ const Com = () => {
               {currentScreenData.text}
             </p>
             <div className="flex justify-center mb-8">
-          <div className="relative">
-            <Image
-              src={currentScreenData?.image}
-              alt="Brightwood School Houses"
-              className="max-w-full h-auto rounded-2xl shadow-lg"
-              width={400}
-              height={400}
-            />
-          </div>
-        </div>
+              <div className="relative">
+                <Image
+                  src={currentScreenData?.image}
+                  alt="Brightwood School Houses"
+                  className="max-w-full h-auto rounded-2xl shadow-lg"
+                  width={400}
+                  height={400}
+                />
+              </div>
+            </div>
             <p className="text-xl text-gray-600 leading-relaxed font-medium mb-4">
               All the students have completed a quiz, and the results are in!
             </p>
             <p className="text-xl text-gray-600 leading-relaxed font-medium mb-6">
-              But there's a problem: all the quiz scores are in a list, and they do not know how each house has performed. Let's get their data organized!
+              However, there's a problem: all the quiz scores are in a  list, but they do not know how each house has performed.
+              <br />
+              Let’s get their data organized!
             </p>
           </div>
         )}
 
-       
+
 
         <div className="flex justify-center">
           {currentScreen < screens.length && (

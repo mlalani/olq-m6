@@ -13,18 +13,18 @@ export default function Com() {
     1: {
       heading: 'Scenario 1: The Future City Designer',
       description:
-        'Olivia’s first challenge is for her "Future City" project: she needs to design a brand-new, super-cool type of school bus for her city. It has to be unique! Olivia is confused which way to go:',
+        'Samantha’s first challenge is for her ""Future City"" project: she needs to design a unique school bus for her city.',
       options: [
-        'Option A: "I’ll think of my own creative ideas for a bus (maybe it flies, or it cleans the air!). Then, I might ask AI-X to help me describe my unique bus or give me some cool, futuristic names for it!"',
-        'Option B:  "I’ll just type: ‘Design a futuristic school bus’ into AI-X and copy its entire description and design idea without adding any of my own thoughts."',
+        'Option A: I’ll think of my own creative ideas for a bus (maybe it flies, or it cleans the air!). Then, I might ask AI-X to help me describe my unique bus or give me some cool, futuristic names for it!',
+        'Option B:  I’ll just type: ‘Design a futuristic school bus’ into AI-X and copy its entire description and design idea without adding any of my own thoughts.',
       ],
       questions: [
-        'Which one lets Olivia be creative and use her own brain?',
+        'Which one lets Samantha be creative and use her own brain?',
         'What do you think could go wrong with Option B?',
         'Which option should she pick?',
       ],
       result:
-        'Olivia thinks Option B is the easiest, so she copies everything AI-X wrote and turns it in. But guess what? Three other classmates in her class used the exact same AI tool for the same competition, and all of them had the same results',
+        'Samantha thinks Option B is the easiest, so she copies everything AI-X wrote and turns it in.',
       followUp: [
         'Why do you think this happened? Why did the AI give the same answer to multiple students?'
       ]
@@ -32,17 +32,18 @@ export default function Com() {
     2: {
       heading: 'Scenario 2: The Amazing Inventor Report',
       description:
-        'Olivia has a new project: she needs to make a short presentation about a famous inventor, like Thomas Edison. She needs to share three correct facts about him. Olivia is confused which way to go:',
+        'Samantha has a new project: she needs to make a short presentation about the famous scientist, Isaac Newton. She needs to share three correct facts about him.',
       options: [
-        'Option A: "I’ll search by myself and find facts about Thomas Edison. Then, I might ask AI-X to help me organize these facts into neat bullet points or suggest an interesting way to start my presentation."',
-        'Option B: "I’ll just ask AI-X to "Tell me all about Thomas Edison for a school presentation" and copy all the information it gives me without checking."'
+        'Option A: I’ll search by myself and find facts about Isaac Newton. Then, I might ask AI-X to help me organize these facts into neat, bullet points or suggest an interesting way to start my presentation.',
+        'Option B: I’ll just ask AI-X to "Tell me all about Isaac Newton for a school presentation" and copy all the information it gives me without checking.'
       ],
       questions: [
+        'Which one lets Samantha be creative and use her own brain?',
         'What could go wrong with Option B?',
-        'Which one should Olivia choose this time?'
+        'Which one should Samantha choose this time?',
       ],
       result:
-        'Olivia thinks Option B is still the fastest way, so she copies what AI-X wrote for her presentation. She proudly presents her facts in class. But guess what? One of her facts says: "Thomas Edison invented the internet while living in a castle!"',
+      'Samantha thinks Option B is still the fastest way, so she copies what AI-X wrote for her presentation. She proudly presents her facts in class. But guess what? One of her facts says: "Isaac Newton invented the internet while living in a castle!"',
       followUp: [
         'What\'s wrong with this statement?'
       ]
@@ -56,7 +57,7 @@ export default function Com() {
       {step === 'intro' && (
         <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur p-6 rounded-2xl shadow-xl text-center space-y-4">
           <p className="text-xl">
-            Meet Olivia, a bright and curious 12-year-old. She just discovered a magical talking AI robot friend called <strong> AI-X</strong>. AI-X can help with almost everything but Olivia has to learn when to use it as a buddy, and when she's letting it be the boss!
+            Meet Samantha, a bright and curious 12-year-old. She just found a talking AI robot friend called <strong>AI-X</strong>. AI-X can help with almost everything but Samantha has to learn when to use it as a buddy, and when she's letting it be the boss!
           </p>
           <Image
             src={C1}

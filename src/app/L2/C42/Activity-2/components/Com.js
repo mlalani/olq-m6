@@ -7,19 +7,21 @@ import C2 from "../assets/c2.png";
 import S1 from "../assets/s1.png";
 import S2 from "../assets/s2.png";
 
+
+
 const questions = [
-  "Q1. What's one big difference you noticed between Zara's presentation and Kiaan's presentation?",
+  "Q1. What's the one big difference you noticed between Zara's presentation and Kiaan's presentation?",
   "Q2. Jay was also in the presentation hall. How do you think Jay felt when Zara mentioned his efforts?",
   "Q3. Why do you think Zara mentioned Jay, even though it was her project?"
 ];
 
 const posters = [
   {
-    heading: "Poster 1: Joy made a poster about Octopuses",
+    heading: "Poster 1: Joy made a poster about an Octopus, Is it missing something important?",
     image: S1
   },
   {
-    heading: "Poster 2: Maya made a poster about Ocean Wonders",
+    heading: "Poster 2: What do you think about Maya's poster? Is this poster perfect?",
     image: S2
   }
 ];
@@ -61,11 +63,11 @@ export default function Com() {
 
           <div className="max-w-6xl bg-white/80 backdrop-blur p-6 rounded-xl shadow-xl text-center space-y-4">
             <p className="text-lg font-medium text-gray-700">
-              Zara and Kiaan, two 4th Grade students. They both worked hard on their science projects, getting a lot of help from their Grade 5 friend, Jay.
+            Zara and Kiaan are Grade 4 students. They work hard on their science projects, getting a lot of help from their Grade 5 friend, Jay. 
               <br />
-              On presentation day, Zara went first, presenting her excellent project on polar bears. At the end, she thanked Jay for his help, impressing everyone with her presentation and her kindness.
+              On presentation day, Zara went first to present her excellent project on polar bears. At the end, she thanked Jay for his help, impressing everyone with her presentation skills and kindness. 
               <br />
-              Kiaan then presented his project on jellyfish, also doing a great job and impressing the audience.
+              Kiaan then presented his project on jellyfish, also did a great job and impressed the audience.
             </p>
 
             {/* Questions Displayed So Far */}

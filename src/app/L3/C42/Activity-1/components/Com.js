@@ -16,11 +16,12 @@ export default function Com() {
     "Do you know what a domain is?"
   ];
 
+
   const tips = [
-    "<b>Check the Domain Extension</b>: If you see an unusual extension like <code>.ora</code>, <code>.zip</code>, or <code>.top</code>, it's a red flag! Stick to trusted ones like <code>.com</code>, <code>.org</code>, <code>.edu</code>, <code>.gov</code>.",
-    "<b>Spelling Tricks or Fake Lookalikes</b>: Sites may try g0ogle.com (zero not o) or amaz0n.com. Always look carefully!",
-    "<b>HTTP vs HTTPS</b>: Make sure the link starts with <code>https://</code> and shows a padlock 🔒. No 'S'? Not safe!",
-    "<b>Use Tools</b>: Sites like domaintools.com help check a website’s info. If in doubt, check it out!"
+    "<b>Check the Domain Extension</b>: If you see an unusual extension like <code>.ora</code>, <code>.zip</code>, or <code>.top</code> or anything unfamiliar, it's a red flag! Stick to trusted ones like <code>.com</code>, <code>.org</code>, <code>.edu</code>, <code>.gov</code>.",
+    "<b>Look for Spelling Tricks or Fake Lookalikes</b>: There might be websites that look almost identical to credible sites, hoping you won't notice. For example, if you wanted to go to google.com, but saw g0ogle.com (with a '0' instead of an 'o'). Or amaz0n.com instead of amazon.com? Always look closely at every letter!",
+    "<b>HTTP vs HTTPS</b>: Notice the start of a website link. Does it say <code>https://</code> with a padlock? The “S” means Secure i.e. it keeps your info safe. No “S” or no padlock? Not safe to use.",
+    "<b>Using Tools</b>: Some online tools such as domaintools are built to check details about fishy websites. So when you are confused about the credibility of a website, check these tools out. "
   ];
 
   return (
@@ -37,16 +38,15 @@ export default function Com() {
             />
             <div className="md:w-1/2 text-lg space-y-4 leading-relaxed">
               <p>
-                Aarav, an 11-year-old working on his volcano project, got a message from a classmate:
+                11-year-old Aarav gets a message from a classmate while working on his volcano project.
                 <br />
                 <strong>"Secret volcano info NASA won’t show you! — www.scienceinfo.ora."</strong>
               </p>
               <p>
-                Curious, he clicked the link. The site looked normal, so he went on with his work.
-                But the next day, his tablet froze!
+                Curious, he checks out the link. The site appears normal, so he gets on with his work. But the next day, his tablet freezes!
               </p>
               <p>
-                He took his tablet to the repair shop. The technician looked at it, ran some tests, and then said:
+                He takes his tablet to the repair shop. The technician looks at it, runs some tests, and then says:
                 <br />
                 <em>"Aarav, there were viruses downloaded from a suspicious site. It looks like it came from scienceinfo.ora. This isn’t a real website – it’s pretending to be one!"</em>
               </p>
@@ -60,7 +60,7 @@ export default function Com() {
                 onClick={() => setQuestionIndex(0)}
                 className="bg-blue-600 text-white px-6 py-2 rounded-full shadow hover:bg-blue-700 hover:shadow-xl transition-all duration-200"
               >
-              Next
+                Next
               </button>
             </div>
           )}

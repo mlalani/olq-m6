@@ -10,8 +10,9 @@ import S4 from '../assets/s4.png';
 function Com() {
   const [stage, setStage] = useState(0);
 
+
   const questions = [
-    "Looking at this data can you say which day had the most toy sales?",
+    "Looking at this data can you identify which day had the most toy sales? ",
     "Would it be easy to find the answer just by looking at all these numbers?",
   ];
 
@@ -21,8 +22,8 @@ function Com() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
-      <div className={`max-w-6xl w-full bg-white rounded-xl shadow-2xl p-6 flex ${stage === 4 ? 'flex-col' : 'flex-row'} gap-10 items-center`}>
-        
+      <div className={`max-w-8xl w-full bg-white rounded-xl shadow-2xl p-6 flex ${stage === 4 ? 'flex-col' : 'flex-row'} gap-10 items-center`}>
+
         {/* Left Side: Image (conditionally hidden at stage 4) */}
         {stage !== 4 && (
           <div className="w-1/2 flex justify-center">
@@ -33,10 +34,10 @@ function Com() {
               <Image src={S2} alt="Toy Sales Data" className="rounded-lg shadow-md w-full max-w-xs" />
             )}
             {stage === 3 && (
-              <Image src={S3} alt="Graph Example 1" className="rounded-lg shadow-md w-full max-w-xs" />
+              <Image src={S3} alt="Graph Example 1" className="rounded-lg shadow-md w-[700px]" />
             )}
             {stage === 5 && (
-              <Image src={S4} alt="Bar Graph" className="rounded-lg shadow-md w-full max-w-xs" />
+              <Image src={S4} alt="Bar Graph" className="rounded-lg shadow-md w-[600px]" />
             )}
           </div>
         )}
@@ -51,7 +52,11 @@ function Com() {
           {stage === 0 && (
             <p className="text-xl text-gray-500 font-normal mb-6">
               Meet Tina, she owns a magical place called <strong>The Candy Cloud Toy Shop!</strong> She tracked her toy sales for 15 days but needs help making sense of it. <br /><br />
-              Which days were super busy? Which toys were the most popular? She has all the data, but it’s a bit of a jumble!
+              Which days were super busy?
+              <br />
+              Which toys were the most popular?
+              <br />
+              She has all the data, but it’s a bit of a jumble!
             </p>
           )}
 
@@ -86,7 +91,7 @@ function Com() {
 
           {stage === 5 && (
             <p className="text-xl text-gray-700 font-medium mb-4 leading-relaxed">
-              It’s a cool kind of chart that shows information using bars of different heights. The taller the bar, the more there is! It's a fun and easy way to compare things at a glance.
+              It’s a chart that shows information using bars of different heights. The taller the bar, the more information there’s to be analysed!
             </p>
           )}
 

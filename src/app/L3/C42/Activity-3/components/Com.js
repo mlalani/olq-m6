@@ -1,5 +1,8 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
+import WatermarkImage from '../assets/s1.png';
+import NasaImage from '../assets/s2.png';
 
 export default function Com() {
   const [introIndex, setIntroIndex] = useState(0);
@@ -9,11 +12,11 @@ export default function Com() {
   const introSteps = [
     {
       title: 'Copyright',
-      desc: "You can’t use it freely without permission.",
+      desc: "You shouldn’t use it freely without permission",
     },
     {
       title: 'Creative Commons',
-      desc: "You can use it, but you must give credit.",
+      desc: "You can use it, but you must give credit to the person who actually created it.",
     },
     {
       title: 'Public Domain',
@@ -24,23 +27,19 @@ export default function Com() {
   const scenarios = [
     {
       heading: 'Scenario A: Image with Watermark',
-      link:
-        'https://www.shutterstock.com/image-photo/hawai-volcanoes-national-park-located-on-2505703587',
-      linkText: "link",
+      image: WatermarkImage,
       question: 'Can you just copy-paste this image?',
     },
     {
       heading: 'Scenario B: Creative Commons Image',
       link:
-        'https://www.flickr.com/photos/22460495@N03/6909831692',
+        'https://www.europeana.eu/en/item/92023/images_billed_2010_okt_billeder_object337111',
       linkText: "link",
       question: 'Can you just copy-paste this image?',
     },
     {
       heading: 'Scenario C: NASA Image (Public Domain)',
-      link:
-        'https://science.nasa.gov/wp-content/uploads/2024/03/pia04304-mars.jpg',
-      linkText: "link",
+      image: NasaImage,
       question:
         "You find this amazing picture of Mars on NASA's website. Can you use it?",
     },
@@ -89,18 +88,29 @@ export default function Com() {
       {started && scenarioIndex < scenarios.length && (
         <div className="max-w-3xl mx-auto mt-10 bg-white/90 backdrop-blur p-6 rounded-2xl shadow-xl space-y-6 text-center">
           <h2 className="text-2xl font-bold text-purple-700">
-            {scenarios[scenarioIndex].heading}: 
-            <a 
-              target='blank'
-              className='ml-[10px] text-blue-500' href={scenarios[scenarioIndex].link}>
-              {scenarios[scenarioIndex].linkText}
-            </a>
+            {scenarios[scenarioIndex].heading}
+            {scenarios[scenarioIndex].link && (
+              <>
+                : 
+                <a 
+                  target='blank'
+                  className='ml-[10px] text-blue-500' href={scenarios[scenarioIndex].link}>
+                  {scenarios[scenarioIndex].linkText}
+                </a>
+              </>
+            )}
           </h2>
-          {/* <img
-            src={scenarios[scenarioIndex].image}
-            alt="Scenario"
-            className="w-full max-h-64 object-contain rounded shadow"
-          /> */}
+          
+          {scenarios[scenarioIndex].image && (
+            <div className="flex justify-center">
+              <Image
+                src={scenarios[scenarioIndex].image}
+                alt="Scenario"
+                className="w-[500px] object-contain rounded shadow"
+              />
+            </div>
+          )}
+          
           <p className="text-xl font-medium">
             {scenarios[scenarioIndex].question}
           </p>

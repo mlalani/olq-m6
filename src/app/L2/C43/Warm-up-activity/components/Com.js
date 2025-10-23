@@ -5,10 +5,10 @@ import Confetti from 'react-confetti';
 
 const initialItems = [
   { id: '13', content: 'Donuts', type: 'treat' },
-  { id: '5', content: 'Edamame', type: 'healthy' },
+  { id: '5', content: 'Cherry Tomatoes', type: 'healthy' },
   { id: '17', content: 'Ice cream', type: 'treat' },
   { id: '1', content: 'Apple', type: 'healthy' },
-  { id: '10', content: 'Whole wheat crackers', type: 'healthy' },
+  { id: '10', content: 'Oatmeal', type: 'healthy' },
   { id: '18', content: 'Cookies', type: 'treat' },
   { id: '2', content: 'Yogurt (low sugar)', type: 'healthy' },
   { id: '14', content: 'Candy', type: 'treat' },
@@ -30,14 +30,14 @@ const getEmoji = (content) => {
   switch (content) {
     case 'Donuts':
       return '🍩';
-    case 'Edamame':
-      return '🌱';
+    case 'Cherry Tomatoes':
+      return '🍅';
     case 'Ice cream':
       return '🍦';
     case 'Apple':
       return '🍎';
-    case 'Whole wheat crackers':
-      return '🥨';
+    case 'Oatmeal':
+      return '🥣';
     case 'Cookies':
       return '🍪';
     case 'Yogurt (low sugar)':

@@ -6,17 +6,17 @@ import S2 from '../assets/s2.png';
 
 const Com = () => {
   const [currentScreen, setCurrentScreen] = useState(1);
-  
+
   const screens = [
     {
       id: 1,
-      text: "Welcome back to Color Splash Studio!",
+      text: "The Pizza Pals Crew are back!",
       image: S1,
-      additionalText: "Earlier, we helped the store understand which days were the busiest and lowest.",
-      problemText: "But now, the store owners have another big question:",
+      additionalText: "Earlier, we helped the store understand which days were the busiest and the lowest.",
+      problemText: "But now, the store owners have another question:",
       questions: [
-        "Which products are actually selling well",
-        "And which ones aren't moving at all?"
+        "Which pizzas are the most loved and selling well?",
+        "And which pizzas are the least liked?"
       ],
       solutionText: "To do this, we'll use a special kind of chart called a \"pie chart.\"",
       buttonText: "Next"

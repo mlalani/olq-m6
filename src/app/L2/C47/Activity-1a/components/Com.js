@@ -27,21 +27,21 @@ const Com = () => {
     },
     {
       id: 3,
-      text: "Jay puts on the VR headset and… WHOOSH! He’s inside a virtual zoo filled with robotic animals that move, roar, and even wave hello!",
+      text: "Jay puts on the VR headset and… WHOOSH! He’s inside a virtual safari filled with robotic creatures that move, roar, and even wave hello!",
       image: S3,
       buttonText: "Next",
       isDeviceButton: false
     },
     {
       id: 4,
-      text: "While walking through the zoo, Jay meets his friend Tara! They start exploring the zoo together. ",
+      text: "While walking through the safari, Jay meets his friend Tara! They start exploring it together.",
       image: S4,
       buttonText: "Next",
       isDeviceButton: false
     },
     {
       id: 5,
-      text: "Suddenly, Jay hears his dad calling for dinner. He takes off his VR headset and returns to the real world, time to eat!",
+      text: "Jay’s dad calls for dinner, so he takes off his VR headset and goes to eat.",
       image: S5,
       buttonText: "Next",
       isDeviceButton: false

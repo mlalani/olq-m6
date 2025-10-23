@@ -10,24 +10,26 @@ import C3 from '../assets/c3.jpeg';
 const situations = [
   {
     id: 1,
-    title: 'Roy played games on his tablet for 3 hours straight.',
+    title: 'Roy played games on his IPad for 3 hours.',
     image: C1,
     correctAnswer: 'Red',
     followUps: [
       "Why do you think that's a red flag?",
-      "What else could Roy do instead of playing for 3 hours straight? What's an alternative action he could take to have a more balanced day?",
+      "What should Roy do instead of playing on iPad continuously?",
     ],
   },
   {
     id: 2,
-    title: 'Lily watched her favorite show for 20 minutes, then took a break and went out.',
+    title: 'Lily watched her favorite show for 20 minutes, took a break, then went out for a walk.',
     image: C2,
     correctAnswer: 'Green',
-    followUps: [],
+    followUps: [
+      "Why do you think that's a green flag?"
+    ],
   },
   {
     id: 3,
-    title: 'Sam always watches videos on his tablet right before he goes to bed.',
+    title: 'Sam always watches videos on his IPad right before he goes to bed.',
     image: C3,
     correctAnswer: 'Red',
     followUps: [

@@ -13,7 +13,7 @@ const Com = () => {
   const screens = [
     {
       id: 1,
-      text: "Logan has just finished his homework and is ready for an adventure. He picks up his VR headset from his desk, this cool gadget helps him step into virtual worlds! ",
+      text: "Logan has just finished his homework and is ready for an adventure. He picks up his VR headset from his desk to get into virtual spaces!",
       image: S1,
       buttonText: "Show Device",
       isDeviceButton: true

@@ -18,14 +18,18 @@ import S4 from "../assets/s4.png";
 import S5 from "../assets/s5.png";
 import S6 from "../assets/s6.png";
 import S7 from "../assets/s7.png";
+import S8 from "../assets/s8.png";
+import S9 from "../assets/s9.png";
 
 const categories = [
   { label: 'Eating', image: S1 },
   { label: 'Playing online', image: S2 },
   { label: 'Playing offline', image: S3 },
+  { label: 'Watching TV', image: S8 },
   { label: 'Studying online', image: S4 },
   { label: 'Studying offline', image: S5 },
   { label: 'School', image: S6 },
+  { label: 'Watching reels/short clips', image: S9 },
   { label: 'Sleeping', image: S7 },
 ];
 

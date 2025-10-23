@@ -8,40 +8,40 @@ const Com = () => {
   const [currentScreen, setCurrentScreen] = useState(1);
   
   const salesData = [
-    { date: "July 10", item: "Paint Set", units: 14 },
-    { date: "July 10", item: "Sketchbook", units: 10 },
-    { date: "July 11", item: "Paint Set", units: 16 },
-    { date: "July 11", item: "Watercolors", units: 7 },
-    { date: "July 12", item: "Sketchbook", units: 12 },
-    { date: "July 12", item: "Markers", units: 8 },
-    { date: "July 13", item: "Paint Set", units: 11 },
-    { date: "July 14", item: "Sketchbook", units: 9 },
-    { date: "July 14", item: "Markers", units: 6 },
-    { date: "July 15", item: "Paint Set", units: 18 }
+    { date: "July 10", item: "Margherita", units: 14 },
+    { date: "July 10", item: "Veggie Blast", units: 10 },
+    { date: "July 11", item: "Cheese Burst", units: 16 },
+    { date: "July 11", item: "Margherita", units: 7 },
+    { date: "July 12", item: "Paneer Fiesta", units: 12 },
+    { date: "July 12", item: "Veggie Blast", units: 8 },
+    { date: "July 13", item: "Margherita", units: 11 },
+    { date: "July 14", item: "Cheese Burst", units: 9 },
+    { date: "July 14", item: "Paneer Fiesta", units: 6 },
+    { date: "July 15", item: "Veggie Blast", units: 18 }
   ];
 
   const screens = [
     {
       id: 1,
-      text: "Color Splash Studio is a little art store known for its bright supplies and weekly discount sales!",
+      text: "Let’s look at how graphs can help a real business like The Pizza Pals Crew!",
       image: S1,
       buttonText: "Next"
     },
     {
       id: 2,
-      text: "But something's wrong. Sales are happening every day, yet the owner can't tell:",
+      text: "After analyzing their weekly pizza sales, they want to see their performance more clearly, yet the owner finds it challenging to identify:",
       questions: [
         "Which day was the busiest?",
         "When were sales the lowest?"
       ],
-      additionalText: "They've been keeping track of everything in a Google Sheet, but it's not properly managed.",
+      additionalText: "They’ve been keeping track of everything in a Google Sheet, but it's not properly managed.",
       buttonText: "Next"
     },
     {
       id: 3,
       text: "",
       showTable: true,
-      additionalText: "Let’s create a bar graph using this data and try to answer the questions of Color Splash",
+      additionalText: "Let’s create a bar graph using this data and try to answer some questions of The Pizza Pals Crew!",
       buttonText: "Next"
     },
     {

@@ -12,31 +12,31 @@ import S5 from '../assets/s5.png';
 const ratings = [
   {
     title: 'U (Unrestricted)',
-    description: `This means it's Universal! Suitable for everyone! All ages can watch this without any worries. These shows are usually happy, friendly, and don't have anything scary or confusing for little kids.`,
-    example: `Real-Life Example: Animated movies like "Finding Nemo"`,
+    description: `This means it's universal i.e. the content is suitable for all ages. These shows are usually happy, friendly, and don't have anything troubling or confusing.`,
+    example: `Example: Animated movies like "Finding Nemo"`,
     image: S1,
   },
   {
-    title: 'UA 7+ (Unrestricted but with caution for children below 7 years old)',
+    title: 'UA 7+ (Unrestricted but with caution for children younger than 7 years)',
     description: `This means it's Universal, but be Aware if you're under 7! It's mostly okay for everyone, but if you're younger than 7, a grown-up should watch with you. It might have a tiny bit of something that could be a little confusing or slightly exciting for very young kids.`,
-    example: `Real-Life Example: Animated movies like "Kung Fu Panda"`,
+    example: `Example: Animated movies like "Kung Fu Panda"`,
     image: S2,
   },
   {
-    title: 'UA 13+ (Unrestricted but with caution for children below 13 years old)',
-    description: `This means it's Universal, but be Aware if you're under 13! It is really for older kids and grown-ups. It might have things that are a bit more grown-up, like some action or feelings that are harder for younger kids to understand.`,
-    example: `Real-Life Example: Superhero movies or adventure films like "Spider-Man"`,
+    title: 'UA 13+ (Unrestricted but with caution for children younger than 13 years)',
+    description: `This also means it's universal, but be aware if you're under 7! It's mostly okay for everyone, but if you're younger than 7, a grown-up should watch with you. A few scenes might be a little confusing or troubling for very young kids`,
+    example: `Example: Superhero movies or adventure films like "Spider-Man"`,
     image: S3,
   },
   {
-    title: 'UA 16+ (Unrestricted but with caution for children below 16 years old)',
-    description: `This means it's Universal, but be Aware if you're under 16! This is definitely for teenagers and grown-ups. If you are younger than 16, this is definitely NOT for you. It will have grown-up topics that are not for young children.`,
-    example: `Real-Life Example: Action thrillers or dramas focused on complex social issues, such as "The Maze Runner"`,
+    title: 'UA 16+',
+    description: `This means its for teenagers and grown-ups. If you are younger than 16, this is definitely NOT for you`,
+    example: `Example: Action thrillers or dramas focused on complex social issues, such as "The Maze Runner"`,
     image: S4,
   },
   {
     title: 'A (Adults)',
-    description: `This means it's Adults Only! This is only for grown-ups aged 18 and above. It's never for kids. Purpose: These shows have content that is only suitable for adults.`,
+    description: `This means it's for adults only! This is only for grown-ups aged 18 or more. These shows have content that is suitable for the older generation.`,
     example: `Example: The Big Short`,
     image: S5,
   },
@@ -63,7 +63,7 @@ export default function Com() {
           <Image
             src={current.image}
             alt={current.title}
-            className="rounded-lg shadow w-[100%]"
+            className="rounded-lg shadow w-[75%]"
           />
         </div>
         {index < ratings.length - 1 ? (

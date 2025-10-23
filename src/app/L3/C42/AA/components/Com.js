@@ -6,21 +6,21 @@ const questions = [
   {
     scenario: "Scenario 1: The First Click",
     question:
-      "You need information about climate change. You find two websites, which site would you trust and why?",
+      "You need information about climate change. You find two websites. Which site would you trust and why?",
     options: [
       { label: "A", text: "www.climatefacts.gov" },
       { label: "B", text: "www.climatealert-now.xyz" },
     ],
     correctAnswer: "A",
-    explanation: "It's a .gov site, likely reliable and official.",
+    explanation: "It's a .gov site, likely to be reliable and official.",
   },
   {
     scenario: "Scenario 2: Stay On-Site",
     question:
-      "You only want results from the Nasa website about space, which search will help you stay focused on that site?",
+      "You only want results from the Nasa website about space. Which search engine will help you stay focused on that site?",
     options: [
-      { label: "A", text: "Animal facts" },
-      { label: "B", text: "Animal facts site:nationalgeographic.com" },
+      { label: "A", text: "Facts about space" },
+      { label: "B", text: "Facts about space site:nasa.gov" },
     ],
     correctAnswer: "B",
     explanation: "Using site: limits search to a specific site.",
@@ -28,7 +28,7 @@ const questions = [
   {
     scenario: "Scenario 3: Picture Perfect?",
     question:
-      "You want to add a penguin photo to your slideshow, which one can you use?",
+      "You want to add a picture of a penguin to your slideshow. Which image can you use?",
     options: [
       { label: "A", text: "An image with a watermark across it" },
       { label: "B", text: "One that says: Photo by Jack & Co (CC BY)" },
@@ -48,6 +48,17 @@ const questions = [
     ],
     correctAnswer: "D",
     explanation: "All those reasons are true — use AI wisely!",
+  },
+  {
+    scenario: "Scenario 5: Creative Commons vs. Copyright",
+    question:
+      "You want to use a video for your school presentation. Which one is safe to use?",
+    options: [
+      { label: "A", text: "A video marked \"All Rights Reserved\"" },
+      { label: "B", text: "A video marked Creative Commons / Free to Use" },
+    ],
+    correctAnswer: "B",
+    explanation: "Creative Commons or Free to Use media typically allows reuse with proper attribution.",
   },
 ];
 
@@ -120,7 +131,7 @@ export default function DigitalDetectiveQuiz() {
                     isCorrect ? "text-green-700" : "text-red-700"
                   }`}
                 >
-                  {isCorrect ? "Correct!" : "Oops Incorrect, ry another option."}
+                  {isCorrect ? "Correct!" : "Oops Incorrect, Try another option."}
                 </p>
                 <p className="text-gray-700 text-sm">
                   {/* {currentQuestion.explanation} */}

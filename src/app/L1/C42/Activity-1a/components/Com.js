@@ -10,45 +10,45 @@ const contentBlocks = [
     id: 1,
     title: "Leo's Day",
     description:
-      "Leo loves his tablet! He watches cartoons at breakfast, plays games after virtual class, and keeps playing, even when his mom asks him to play outside. By dinner, Leo's eyes feel tired. He's a bit grumpy because he has to stop his game. At bedtime, his mind is still busy from the screen, and it's hard for him to fall asleep. The next morning, he feels tired for school.",
+      "Leo loves his IPad! He watches cartoons at breakfast, plays games after virtual classes, and continues to do so afterwards, even when his mom insists on playing outside. By dinner, Leo's eyes feel tired. He gets a bit grumpy because he has to stop. At bedtime, his mind doesn’t switch off so it's hard to fall asleep. Therefore, the next morning, he feels too tired to go to school.",
     image: C1,
   },
   {
     id: 2,
     title: "Mia's Day",
     description:
-      "Mia helps her family at breakfast and then plays outside, running and exploring. After her outdoor fun, she gets to have some screen time! She watches her favorite educational show for a little while and learns something new. Later, Mia draws a picture of what she saw outside. At dinner, she talks happily with her family. At bedtime, she reads a storybook, falls asleep quickly, and wakes up feeling refreshed and ready for a new day!",
+      "Mia helps her family at breakfast and then plays outside with friends. Afterwards, she gets some screen time! She watches her favorite educational show for some time. Later, Mia draws pictures of things she saw while playing. At dinner, she talks happily with her family. At bedtime, she reads a storybook, easily goes to sleep, and wakes up feeling refreshed and ready for a new day!",
     image: C2,
   },
 ];
 
 const questions = [
   {
-    question: "What happened to Leo's eyes because he spent too much time on his screen?",
+    question: "What happened to Leo's eyes because he spent too much screen time?",
     options: [
       { text: 'They felt super strong!', isCorrect: false },
       { text: 'They felt tired and scratchy.', isCorrect: true },
       { text: 'They turned green!', isCorrect: false },
     ],
-    followUp: 'Why do you think looking at screens for a long, long time might make our eyes feel tired?',
+    followUp: 'Why is looking at screens for a long time not good for the eyes?',
   },
   {
-    question: "Why was it hard for Leo to fall asleep?",
+    question: "Why was it hard for Leo to sleep?",
     options: [
-      { text: 'He was too excited from his screen time.', isCorrect: true },
+      { text: 'His mind stayed busy due to screen time.', isCorrect: true },
       { text: 'He drank too much juice.', isCorrect: false },
       { text: 'His bed was too comfy.', isCorrect: false },
     ],
-    followUp: 'Why do you think he was too excited?',
+    followUp: 'Why do you think his mind stayed busy ?',
   },
   {
-    question: "How did Leo feel when his mom asked him to stop playing his game?",
+    question: "How did Leo feel when his mom asked him to stop watching screen? ",
     options: [
       { text: 'Happy and ready to play outside!', isCorrect: false },
       { text: 'A bit grumpy.', isCorrect: true },
       { text: 'Super excited for dinner!', isCorrect: false },
     ],
-    followUp: 'Why do you think he felt grumpy?',
+    followUp: 'What made him grumpy? ',
   },
   {
     question: "How did Mia feel at bedtime and the next morning?",
@@ -146,9 +146,8 @@ export default function Com() {
           <div className="w-full max-w-md mt-4 bg-white rounded-3xl shadow-2xl p-8 text-center">
             {selectedAnswer !== null && (
               <div
-                className={`text-lg font-semibold mb-4 ${
-                  selectedAnswer ? 'text-green-600' : 'text-red-500'
-                }`}
+                className={`text-lg font-semibold mb-4 ${selectedAnswer ? 'text-green-600' : 'text-red-500'
+                  }`}
               >
                 {selectedAnswer ? 'Correct!' : 'Oops Incorrect'}
               </div>
@@ -177,6 +176,7 @@ export default function Com() {
                   {currentQuestion.followUp}
                 </p>
 
+                {/* Next button for all questions */}
                 {!isLastQuestion && (
                   <button
                     onClick={handleNextClue}
@@ -184,13 +184,7 @@ export default function Com() {
                   >
                     Next Clue
                   </button>
-                )}
-
-                {isLastQuestion && (
-                  <p className="text-xl font-bold text-purple-600 mt-4">
-                    You’ve reached the end of the challenge!
-                  </p>
-                )}
+                )}            
               </div>
             )}
           </div>

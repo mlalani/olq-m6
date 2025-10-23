@@ -34,13 +34,13 @@ const Com = () => {
   const screens = [
     {
       id: 1,
-      text: "Maya, the owner of The Frosty Spot, tracked her ice cream sales for 20 days straight during summer vacation. She wants to know which were her best and worst days.",
+      text: "Maya, the owner of The Frosty Spot, tracked her ice-cream sales for 20 days straight during summer vacation. She wants to know about the highest and the lowest sales days",
       image: S1,
       buttonText: "Next"
     },
     {
       id: 2,
-      text: "Looking at this data can you say which day had the most ice cream sold?",
+      text: "Can you identify the day with the highest sales?",
       showTable: true,
       buttonText: "Next"
     },
