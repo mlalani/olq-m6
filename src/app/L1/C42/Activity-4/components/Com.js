@@ -2,15 +2,15 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import S1 from "../assets/S1.png";
-import S2 from "../assets/S2.png";
-import S3 from "../assets/S3.png";
-import S4 from "../assets/S4.png";
-import S5 from "../assets/S5.png";
-import S6 from "../assets/S6.png";
-import S7 from "../assets/S7.png";
-import S8 from "../assets/S8.png";
-import S9 from "../assets/S9.png";
+import S1 from "../assets/s1.png";
+import S2 from "../assets/s2.png";
+import S3 from "../assets/s3.png";
+import S4 from "../assets/s4.png";
+import S5 from "../assets/s5.png";
+import S6 from "../assets/s6.png";
+import S7 from "../assets/s7.png";
+import S8 from "../assets/s8.png";
+import S9 from "../assets/s9.png";
 
 const imageScreens = [
   { id: 1, image: S1, type: 'single' },
