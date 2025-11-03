@@ -22,101 +22,101 @@ const questions = [
     title: 'The Lion King',
     image: S1,
     correctAnswer: [
-      'It’s better for me',
-      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
-      'It’s better for my parents and older people.',
+      'It’s suitable for me',
+      'It’s suitable for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s suitable for my parents and older people.',
     ],
   },
   {
     title: 'Harry Potter and the Order of the Phoenix',
     image: S2,
     correctAnswer: [
-      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
-      'It’s better for my parents and older people.',
+      'It’s suitable for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s suitable for my parents and older people.',
     ],
   },
   {
     title: 'The Gray Man',
     image: S3,
-    correctAnswer: ['It’s better for my parents and older people.'],
+    correctAnswer: ['It’s suitable for my parents and older people.'],
   },
   {
     title: 'Gladiator II',
     image: S4,
-    correctAnswer: ['It’s better for my parents and older people.'],
+    correctAnswer: ['It’s suitable for my parents and older people.'],
   },
   {
     title: 'Jurassic World',
     image: S5,
-    correctAnswer: ['It’s better for my parents and older people.'],
+    correctAnswer: ['It’s suitable for my parents and older people.'],
   },
   {
     title: 'Home Alone',
     image: S6,
     correctAnswer: [
-      'It’s better for me',
-      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
-      'It’s better for my parents and older people.',
+      'It’s suitable for me',
+      'It’s suitable for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s suitable for my parents and older people.',
     ],
   },
   {
     title: 'Avengers',
     image: S7,
     correctAnswer: [
-      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
-      'It’s better for my parents and older people.',
+      'It’s suitable for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s suitable for my parents and older people.',
     ],
   },
   {
     title: 'Baby’s day out',
     image: S8,
     correctAnswer: [
-      'It’s better for me',
-      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
-      'It’s better for my parents and older people.',
+      'It’s suitable for me',
+      'It’s suitable for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s suitable for my parents and older people.',
     ],
   },
   {
     title: 'Superman',
     image: S9,
     correctAnswer: [
-      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
-      'It’s better for my parents and older people.',
+      'It’s suitable for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s suitable for my parents and older people.',
     ],
   },
   {
     title: 'Toy Story',
     image: S10,
     correctAnswer: [
-      'It’s better for me',
-      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
-      'It’s better for my parents and older people.',
+      'It’s suitable for me',
+      'It’s suitable for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s suitable for my parents and older people.',
     ],
   },
   {
     title: 'Karate Kid',
     image: S11,
     correctAnswer: [
-      'It’s better for me',
-      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
-      'It’s better for my parents and older people.',
+      'It’s suitable for me',
+      'It’s suitable for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s suitable for my parents and older people.',
     ],
   },
   {
     title: 'Smurfs',
     image: S12,
     correctAnswer: [
-      'It’s better for me',
-      'It’s better for my older sibling or cousin, who are at least 18 years of age.',
-      'It’s better for my parents and older people.',
+      'It’s suitable for me',
+      'It’s suitable for my older sibling or cousin, who are at least 18 years of age.',
+      'It’s suitable for my parents and older people.',
     ],
   },
 ];
 
 const options = [
-  'It’s better for me',
-  'It’s better for my older sibling or cousin, who are at least 18 years of age.',
-  'It’s better for my parents and older people.',
+  'It’s suitable for me',
+  'It’s suitable for my older sibling or cousin, who are at least 18 years of age.',
+  'It’s suitable for my parents and older people.',
 ];
 
 export default function Com() {
@@ -149,7 +149,7 @@ export default function Com() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-pink-50 flex flex-col items-center justify-center p-6">
-      {/* <h1 className="mb-4 font-bold text-2xl text-indigo-800">Better For Whom?</h1> */}
+      {/* <h1 className="mb-4 font-bold text-2xl text-indigo-800">suitable For Whom?</h1> */}
       <div className="bg-white shadow-2xl rounded-xl p-6 max-w-5xl w-full text-center space-y-4">
         <h2 className="text-xl font-bold text-indigo-700">{current.title}</h2>
         <div className="flex justify-center">
