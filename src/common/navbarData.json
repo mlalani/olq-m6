@@ -57,6 +57,10 @@
                 "link": "/L1/C47/Activity-1a",
                 "name": "Meet the Metaverse!"
             },
+            "Activity 1b": {
+                "link": "/L1/C47/Activity-1b",
+                "name": "Metaverse Clip"
+            },
             "Activity 2a": {
                 "link": "/L1/C47/Activity-2a",
                 "name": "Metaverse Safety"
@@ -70,6 +74,10 @@
             "Activity 3a": {
                 "link": "/L1/C48/Activity-3a",
                 "name": "Submarine Details"
+            },
+            "Tinkercad Text Tutorial": {
+                "link": "/L1/C48/Tinkercad-Text-Tutorial",
+                "name": "Tinkercad Text Tutorial"
             }
         }
     },
@@ -138,6 +146,10 @@
             "Activity 1a": {
                 "link": "/L2/C47/Activity-1a",
                 "name": "Meet the Metaverse!"
+            },
+            "Activity 1b": {
+                "link": "/L2/C47/Activity-1b",
+                "name": "Metaverse Clip"
             },
             "Post Class Activity": {
                 "link": "/L2/C47/PCA",
@@ -212,6 +224,10 @@
             "Activity 1a": {
                 "link": "/L3/C47/Activity-1a",
                 "name": "Meet the Metaverse!"
+            },
+            "Activity 1b": {
+                "link": "/L3/C47/Activity-1b",
+                "name": "Metaverse Clip"
             },
             "Activity 4c": {
                 "link": "/L3/C47/Activity-4c",

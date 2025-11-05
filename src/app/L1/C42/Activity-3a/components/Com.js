@@ -12,24 +12,28 @@ import S5 from '../assets/s5.png';
 const ratings = [
   {
     title: 'U (Unrestricted)',
+    discription0:"This is also labelled as G (General Audiences).",
     description: `This means it's universal i.e. the content is suitable for all ages. These shows are usually happy, friendly, and don't have anything troubling or confusing.`,
     example: `Example: Animated movies like "Finding Nemo"`,
     image: S1,
   },
   {
     title: 'UA 7+ (Unrestricted but with caution for children younger than 7 years)',
+    discription0:"This is also labelled as PG (Parental Guidance).",
     description: `This means it's Universal, but be Aware if you're under 7! It's mostly okay for everyone, but if you're younger than 7, a grown-up should watch with you. It might have a tiny bit of something that could be a little confusing or slightly exciting for very young kids.`,
     example: `Example: Animated movies like "Kung Fu Panda"`,
     image: S2,
   },
   {
     title: 'UA 13+ (Unrestricted but with caution for children younger than 13 years)',
-    description: `This also means it's universal, but be aware if you're under 7! It's mostly okay for everyone, but if you're younger than 7, a grown-up should watch with you. A few scenes might be a little confusing or troubling for very young kids`,
+    discription0:"This is also labelled as PG-13 (Parents Strongly Cautioned)",
+    description: `This also means it's universal, but be aware if you're under 13! It's mostly okay for everyone, but if you're younger than 7, a grown-up should watch with you. A few scenes might be a little confusing or troubling for very young kids`,
     example: `Example: Superhero movies or adventure films like "Spider-Man"`,
     image: S3,
   },
   {
     title: 'UA 16+',
+    discription0:"This is also labelled as R (Restricted)",
     description: `This means its for teenagers and grown-ups. If you are younger than 16, this is definitely NOT for you`,
     example: `Example: Action thrillers or dramas focused on complex social issues, such as "The Maze Runner"`,
     image: S4,
@@ -37,6 +41,7 @@ const ratings = [
   {
     title: 'A (Adults)',
     description: `This means it's for adults only! This is only for grown-ups aged 18 or more. These shows have content that is suitable for the older generation.`,
+    discription0:"This is also labelled as NC-17 (No One 17 and Under Admitted)",
     example: `Example: The Big Short`,
     image: S5,
   },
@@ -57,6 +62,7 @@ export default function Com() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-pink-50 flex flex-col items-center justify-center">
       <div className="bg-white shadow-xl rounded-xl p-3 max-w-6xl w-full text-center">
         <h2 className="text-2xl font-bold text-indigo-700 mb-4">{current.title}</h2>
+        <p className='mb-4 text-gray-600 font-semibold'>{current.discription0}</p>
         <p className="text-gray-700 mb-3 whitespace-pre-line text-lg">{current.description}</p>
         <p className="text-green-700 font-medium mb-4">{current.example}</p>
         <div className="flex justify-center mb-4">
