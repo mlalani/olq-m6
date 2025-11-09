@@ -7,55 +7,49 @@ import S1 from '../assets/s1.png';
 import S2 from '../assets/s2.png';
 import S3 from '../assets/s3.png';
 import S4 from '../assets/s4.png';
-import S5 from '../assets/s5.png';
 
 const scenes = [
   {
-    title: 'Do you know what GSLV Mk III is?',
+    title: 'Do you know what the Space Launch System (SLS) is?',
+    image: S1,
+    content: 'The SLS is NASA’s most powerful rocket ever built! It’s designed to take astronauts and equipment beyond Earth,  even to the Moon and Mars',
+  },
+  {
+    title: 'Purpose',
+    image: S1,
+    content:
+      'SLS is a very big rocket made by NASA to carry astronauts, spacecraft, and heavy equipment far into space, for example, to the Moon and one day to Mars. It helps send people and things that are too large for smaller rockets.',
+  },
+  {
+    title: "What makes is special:",
+    image: S1,
+    content: [
+      "Super strong lift: SLS is one of the most powerful rockets ever built, it can carry very heavy loads deep into space.",
+      "Takes people far: It is made for long trips, like missions to the Moon and beyond, so astronauts can live and work far from Earth. ",
+      "Part of big plans: SLS helps with important space missions that prepare humans to explore other worlds."
+    ]
+  },
+  {
+    title: 'Let’s check out the common parts used in satellite launchers!',
     image: S1,
     content: '',
   },
   {
-    title: 'Name & Purpose',
-    image: S1,
-    content:
-      'GSLV stands for Geosynchronous Satellite Launch Vehicle. GSLV Mk III (now called LVM-3) is a three-stage rocket made by ISRO (India’s space agency) to lift heavy satellites into space.',
-  },
-  {
-    title: "Why It's Special:",
-    image: S1,
-    content:
-      'It’s capable of carrying over 4 tonnes into high space, that’s like lifting 20 elephants! GSLV Mk III is the rocket that helped send missions like Chandrayaan-2 and Chandrayaan-3 to the Moon.',
-  },
-  {
-    title: 'Let’s checkout the parts of GSLV Mk III',
-    image: S1,
-    content: '',
-  },
-  {
-    title: 'C25 Core Stage (Middle Part):',
+    title: 'Boosters (The Lifters)',
     image: S2,
-    content:
-      'This is like the rocket’s belly. It has powerful fuel to push the rocket really high.\nExample: Think of it like the engine of a race car, it gives the rocket its zoom!',
+    content:'These are the powerful engines that help the rocket lift off the ground. \nExample: Think of boosters like your legs when you jump, they give the first big push! ',
   },
   {
-    title: 'S200 Boosters (Side Parts):',
+    title: 'Core Stage (The Main Body) ',
     image: S3,
-    content:
-      'These are like two big sidekick arms that help the rocket blast off in the beginning.\nExample: Like having two strong friends pushing you on a swing!',
+    content: 'This part carries the main fuel and engines that keep the rocket moving up once it leaves the ground. \nExample: It’s like the heart of the rocket, full of power and energy! ',
   },
   {
-    title: 'L110 Liquid Stage (Upper Middle):',
+    title: 'Payload Section (The Carrier) ',
     image: S4,
     content:
-      'This part burns special fuel to keep the rocket going even after the boosters are done.\nExample: Like a battery that keeps your toy running after you start it!',
-  },
-  {
-    title: 'Payload Adaptor',
-    image: S5,
-    content:
-      'It is like the rocket’s backpack! It safely holds the satellite or spaceship that the rocket is carrying into space.',
-  },
+      'This is the top part that holds the satellite, spacecraft, or astronauts safely inside. \nExample: Like a backpack that carries all the important stuff to space!',
+  }
 ];
 
 export default function Com() {
@@ -78,26 +72,39 @@ export default function Com() {
 
       {isSideBySide ? (
         <div className="flex flex-col md:flex-row items-center gap-6 max-w-4xl text-left">
-          {/* Text */}
-          {/* Image */}
           <Image
             src={scene.image}
             alt={scene.title}
-            width={300}
-            height={400}
+            width={600}
+            height={600}
             className="rounded-lg shadow-md flex-1"
           />
-          <p className="text-2xl text-gray-700 whitespace-pre-line flex-1">
-            {scene.content}
-          </p>
-
+          <div className="text-2xl text-gray-700 whitespace-pre-line flex-1">
+            {Array.isArray(scene.content) ? (
+              <ul className="list-disc pl-6">
+                {scene.content.map((point, idx) => (
+                  <li key={idx} className="mb-2">{point}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>{scene.content}</p>
+            )}
+          </div>
         </div>
       ) : (
         <>
           {scene.content && (
-            <p className="text-2xl text-gray-700 max-w-3xl whitespace-pre-line mb-6">
-              {scene.content}
-            </p>
+            Array.isArray(scene.content) ? (
+              <ul className="list-disc pl-6 text-2xl text-gray-700 max-w-3xl mb-6 text-left">
+                {scene.content.map((point, idx) => (
+                  <li key={idx} className="mb-2">{point}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-2xl text-gray-700 max-w-3xl whitespace-pre-line mb-6">
+                {scene.content}
+              </p>
+            )
           )}
           {scene.image && (
             <div className="mb-4">
